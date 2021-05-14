@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
                 tp.setCurrentHour(12);
                 tp.setCurrentMinute(0);
                 dp.updateDate(2020, 0, 1);
+
+                Toast.makeText(MainActivity.this, "Button Reset is Clicked!", Toast.LENGTH_SHORT).show();
             }
         });
 
